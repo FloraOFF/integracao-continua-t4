@@ -1,15 +1,7 @@
 name: CI Front-end Branches
 
 on:
-  push:
-    branches:
-      - '**'
-      - '!main'
-    paths:
-      - 'sgcmapp/**'
-
-permissions:
-  contents: write
+  workflow_dispatch:
 
 jobs:
 
