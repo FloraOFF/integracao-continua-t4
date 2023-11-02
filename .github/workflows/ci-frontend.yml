@@ -47,3 +47,6 @@ jobs:
       - name: Test
         working-directory: sgcmapp/
         run: ng test --no-watch --no-progress --browsers=ChromeHeadless
+      - name: Test End to End
+        working-directory: sgcmapp/
+        run: ng run sgcmapp:cypress-run
